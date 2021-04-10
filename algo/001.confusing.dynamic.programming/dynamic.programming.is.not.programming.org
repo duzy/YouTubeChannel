@@ -1,0 +1,7 @@
+#+TITLE: `Dynamic Programming` is NOT Programming
+
+* Algorithms 
+** LZW, ZIP (inflate, deflate in the public domain)
+
+* Terms
+** Kernel (ai, computer graphics)
