@@ -1,0 +1,38 @@
+#+TITLE: C++ Memory Management
+
+* Standard Utilities
+
+** std::allocator<T>
+
+   customize the memory management for c++
+
+*** allocate/deallocate
+
+*** returns and work with a Raw Pointer (T*)
+
+*** do operator new/delete -> malloc/free (c api), 
+
+*** allocate non-heap (stack memory) using the universal api
+
+*** mmap memory (virtual), file on disk
+
+** smart pointers
+
+   save from memory leaks
+
+*** std::unique_ptr<T>
+
+**** Raw Pointer and `pointer revoking function`
+
+**** internal: pair<T*, void(*)(T*)>
+
+***** Optimized using compressed storage, so that sizeof(unique_ptr<T>) == sizeof(T*)
+
+*** std::shared_ptr<T>  ->  ControlBlock{ T* Pointer; size_t ShareNum; };
+
+**** Using Control Block to manage the Raw Pointer and counting the share number.
+
+*** std::weak_ptr<T>
+** garbage collector
+
+   no language native support for gc in c++
