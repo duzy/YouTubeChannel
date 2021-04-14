@@ -6,17 +6,22 @@
 
    customize the memory management for c++
 
-*** allocate/deallocate
+*** Purpose
 
-*** returns and work with a Raw Pointer (T*)
+**** Not for general purpose memory allocation
 
-*** do operator new/delete -> malloc/free (c api), 
+**** Mainly used as component customization 
 
-*** allocate non-heap (stack memory) using the universal api
+*** Banefits
+**** allocate/deallocate
+**** returns and work with a Raw Pointer (T*)
+**** do operator new/delete -> malloc/free (c api), 
+**** allocate non-heap (stack memory) using the universal api
 
-*** mmap memory (virtual), file on disk
+**** mmap memory (virtual), file on disk
 
-** smart pointers
+
+** [*] smart pointers
 
    save from memory leaks
 
