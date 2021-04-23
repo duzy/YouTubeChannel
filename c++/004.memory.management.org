@@ -38,6 +38,9 @@
 **** Using Control Block to manage the Raw Pointer and counting the share number.
 
 *** std::weak_ptr<T>
+
 ** garbage collector
 
    no language native support for gc in c++
+
+***
